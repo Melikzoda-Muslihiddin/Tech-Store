@@ -1,0 +1,181 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "MacBook Pro M3 Max",
+      "category": "business",
+      "price": 3499,
+      "rating": 4.9,
+      "stock": 15,
+      "badge": "IN STOCK",
+      "thumbnail": "https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=800",
+      "description": "High-performance laptop for creators and developers."
+    },
+    {
+      "id": "2",
+      "title": "Dell XPS 15",
+      "category": "ultrabooks",
+      "price": 2199,
+      "rating": 4.7,
+      "stock": 10,
+      "badge": "BEST SELLER",
+      "thumbnail": "https://images.pexels.com/photos/374074/pexels-photo-374074.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "description": "Compact premium ultrabook with powerful performance."
+    },
+    {
+      "id": "3",
+      "title": "Razer Blade 16",
+      "category": "gaming",
+      "price": 3899,
+      "rating": 4.8,
+      "stock": 6,
+      "badge": "LIMITED",
+      "thumbnail": "https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "description": "Top-tier gaming laptop with high refresh display."
+    },
+    {
+      "id": "4",
+      "title": "Surface Laptop 5",
+      "category": "business",
+      "price": 1299,
+      "rating": 4.5,
+      "stock": 25,
+      "badge": "IN STOCK",
+      "thumbnail": "https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "description": "Balanced laptop for everyday work."
+    },
+    {
+      "id": "5",
+      "title": "ASUS ZenBook S 13",
+      "category": "ultrabooks",
+      "price": 1499,
+      "rating": 4.6,
+      "stock": 12,
+      "badge": "NEW ARRIVAL",
+      "thumbnail": "https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=800",
+      "description": "Ultra-thin ultrabook with strong battery."
+    },
+    {
+      "id": "6",
+      "title": "Lenovo ThinkPad X1",
+      "category": "business",
+      "price": 1849,
+      "rating": 4.9,
+      "stock": 8,
+      "badge": "IN STOCK",
+      "thumbnail": "https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "description": "Durable business-class laptop."
+    },
+    {
+      "id": "7",
+      "title": "Student Air",
+      "category": "student",
+      "price": 799,
+      "rating": 4.4,
+      "stock": 40,
+      "badge": "IN STOCK",
+      "thumbnail": "https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=800",
+      "description": "Lightweight laptop for studying."
+    },
+    {
+      "id": "8",
+      "title": "Gaming Beast X",
+      "category": "gaming",
+      "price": 1899,
+      "rating": 4.6,
+      "stock": 14,
+      "badge": "IN STOCK",
+      "thumbnail": "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "description": "Power gaming setup with strong cooling."
+    },
+    {
+      "id": "9",
+      "title": "UltraBook Pro 14",
+      "category": "ultrabooks",
+      "price": 1299,
+      "rating": 4.8,
+      "stock": 18,
+      "badge": "IN STOCK",
+      "thumbnail": "https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "description": "Fast, thin, premium ultrabook."
+    },
+    {
+      "id": "10",
+      "title": "Business Elite 13",
+      "category": "business",
+      "price": 999,
+      "rating": 4.5,
+      "stock": 22,
+      "badge": "IN STOCK",
+      "thumbnail": "https://images.pexels.com/photos/374074/pexels-photo-374074.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "description": "Affordable business laptop."
+    },
+    {
+      "id": "11",
+      "title": "Gaming Nova 17",
+      "category": "gaming",
+      "price": 2299,
+      "rating": 4.7,
+      "stock": 9,
+      "badge": "IN STOCK",
+      "thumbnail": "https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "description": "High-end gaming with big screen."
+    },
+    {
+      "id": "12",
+      "title": "Student Flex 13",
+      "category": "student",
+      "price": 749,
+      "rating": 4.3,
+      "stock": 30,
+      "badge": "IN STOCK",
+      "thumbnail": "https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "description": "Good for college and homework."
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "92",
+      "name": "Karim Benzema",
+      "email": "camedynest@gmail.com",
+      "password": "21072006"
+    },
+    {
+      "id": "66",
+      "name": "sfdkmvadfmal",
+      "email": "dadasdasd",
+      "password": "12912939123912"
+    },
+    {
+      "id": "a4be",
+      "name": "Names",
+      "email": "muslimmelikzoda@gmail.com",
+      "password": "2552"
+    },
+    {
+      "id": "1ae0",
+      "name": "Karim Benzema",
+      "email": "wdwd@gmail.com",
+      "password": "123654"
+    },
+    {
+      "id": "db91",
+      "name": "qwerty",
+      "email": "qwerty@gmail.com",
+      "password": "123456789"
+    },
+    {
+      "id": "1a54",
+      "name": "Karim Benzema",
+      "email": "mimiko@gmail.com",
+      "password": "12345678"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

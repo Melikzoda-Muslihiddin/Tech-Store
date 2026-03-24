@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechStore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+    <header class="bg-white border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between gap-6">
+            <a href="./index.html" class="flex items-center gap-2 font-bold">
+                <span class="inline-flex w-9 h-9 rounded-xl bg-blue-600"><img src="./image.png" alt=""></span>
+                TechStore
+            </a>
+
+            <nav class="hidden md:flex items-center gap-6 text-sm text-slate-600">
+                <a href="./productCatalog.html" class="hover:text-slate-900">Laptops</a>
+                <a href="#" class="hover:text-slate-900">Accessories</a>
+                <a href="#" class="hover:text-slate-900">Deals</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <div
+                    class="hidden md:flex items-center gap-2 w-[360px] rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+                    <span class="text-slate-400">🔎</span>
+                    <input id="headerSearch" class="w-full bg-transparent outline-none text-sm"
+                        placeholder="Search products..." />
+                </div>
+
+                <a href="./cart.html"
+                    class="relative inline-flex items-center justify-center w-10 h-10 rounded-xl border border-slate-200 bg-white">
+                    🛒
+                    <span id="cartCount"
+                        class="hidden absolute -top-2 -right-2 text-xs bg-blue-600 text-white rounded-full px-2 py-0.5">0</span>
+                </a>
+                <button id="profileBtn" title="Profile"
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-slate-200"></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-5 py-10">
+        <section class="grid grid-cols-12 gap-6 items-center">
+            <div class="col-span-12 md:col-span-6">
+                <span class="inline-flex text-xs px-3 py-1 rounded-full bg-blue-50 text-blue-700 font-semibold">
+                    ✦ New Arrival: 2024 Edition
+                </span>
+
+                <h1 class="mt-4 text-5xl font-extrabold leading-tight">
+                    Next-Gen Performance.<br />
+                    <span class="text-blue-600">Minimalist Design.</span>
+                </h1>
+
+                <p class="mt-4 text-slate-500 max-w-lg">
+                    Experience the new flagship Ultrabook Pro with next-gen chip, liquid retina display, and 30-hour
+                    battery life.
+                </p>
+
+                <div class="mt-8 flex gap-3">
+                    <a href="./productCatalog.html"
+                        class="rounded-xl bg-blue-600 text-white px-6 py-3 text-sm font-semibold hover:bg-blue-700 shadow">
+                        Buy Now
+                    </a>
+                    <a href="./productCatalog.html"
+                        class="rounded-xl bg-white border border-slate-200 px-6 py-3 text-sm font-semibold hover:bg-slate-50">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-span-12 md:col-span-6">
+                <div class="rounded-3xl bg-white border border-slate-100 shadow-sm overflow-hidden">
+                    <img class="w-full h-[340px] object-cover"
+                        src="https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1200"
+                        alt="Hero" />
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-14">
+            <div class="flex items-end justify-between">
+                <div>
+                    <h2 class="text-xl font-bold">Shop by Category</h2>
+                    <p class="mt-1 text-sm text-slate-500">Find the perfect match for your lifestyle</p>
+                </div>
+                <button id="viewAllCategories" class="text-sm text-blue-600 font-semibold hover:underline">View all</button>
+            </div>
+
+            <div id="categories" class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+        </section>
+
+        <section class="mt-14">
+            <h2 class="text-xl font-bold">Popular Laptops</h2>
+            <div id="popular" class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+        </section>
+
+        <section class="mt-16 grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+            <div class="rounded-2xl bg-white border border-slate-100 p-6">
+                <div class="text-2xl">🚚</div>
+                <p class="mt-2 font-semibold">Free Express Shipping</p>
+                <p class="mt-1 text-xs text-slate-500">On all orders over $500.</p>
+            </div>
+            <div class="rounded-2xl bg-white border border-slate-100 p-6">
+                <div class="text-2xl">🛡</div>
+                <p class="mt-2 font-semibold">Secure Warranty</p>
+                <p class="mt-1 text-xs text-slate-500">2-year premium coverage.</p>
+            </div>
+            <div class="rounded-2xl bg-white border border-slate-100 p-6">
+                <div class="text-2xl">🔁</div>
+                <p class="mt-2 font-semibold">Easy Returns</p>
+                <p class="mt-1 text-xs text-slate-500">30-day no-questions return.</p>
+            </div>
+            <div class="rounded-2xl bg-white border border-slate-100 p-6">
+                <div class="text-2xl">🎧</div>
+                <p class="mt-2 font-semibold">24/7 Support</p>
+                <p class="mt-1 text-xs text-slate-500">Talk to a laptop expert.</p>
+            </div>
+        </section>
+
+        <footer class="mt-16 border-t border-slate-100 pt-10 pb-8 text-sm text-slate-500">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center gap-2 font-bold text-slate-900">
+                        <span class="inline-flex w-9 h-9 rounded-xl bg-blue-600"></span>
+                        TechStore
+                    </div>
+                    <p class="mt-3 text-xs leading-5">
+                        The ultimate destination for premium laptops. Designed for professionals, gamers, and students.
+                    </p>
+                </div>
+
+                <div>
+                    <p class="font-semibold text-slate-900">Products</p>
+                    <div class="mt-3 grid gap-2">
+                        <a href="./productCatalog.html" class="hover:text-slate-900">Laptops</a>
+                        <a href="#" class="hover:text-slate-900">Ultrabooks</a>
+                        <a href="#" class="hover:text-slate-900">Workstations</a>
+                        <a href="#" class="hover:text-slate-900">Accessories</a>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-semibold text-slate-900">Support</p>
+                    <div class="mt-3 grid gap-2">
+                        <a href="#" class="hover:text-slate-900">My Account</a>
+                        <a href="#" class="hover:text-slate-900">Track Order</a>
+                        <a href="#" class="hover:text-slate-900">Returns Policy</a>
+                        <a href="#" class="hover:text-slate-900">Contact Us</a>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-semibold text-slate-900">Newsletter</p>
+                    <p class="mt-3 text-xs">Subscribe for exclusive deals and tech updates.</p>
+                    <div class="mt-3 flex gap-2">
+                        <input class="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm"
+                            placeholder="Email address" />
+                        <button class="rounded-xl bg-blue-600 text-white px-4 py-2 text-sm font-semibold">Join</button>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-10 text-center text-xs">© 2024 TechStore Premium. All rights reserved.</p>
+        </footer>
+    </main>
+    
+    <script type="module" src="../dist/index.js"></script>
+</body>
+
+</html>
